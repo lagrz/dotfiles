@@ -55,11 +55,11 @@ set shortmess=atI
 set showmode
 " Show the filename in the window titlebar
 set title
-if exists("&relativenumber")
-  " Use relative line numbers
-  set relativenumber
-  au BufReadPost * set relativenumber
-endif
+" if exists("&relativenumber")
+   " Use relative line numbers
+"   set relativenumber
+"   au BufReadPost * set relativenumber
+" endif
 " Start scrolling three lines before the horizontal window border
 set scrolloff=3
 
