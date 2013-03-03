@@ -31,7 +31,7 @@ export PATH
 * `.functions`
 * `.extra` - not included, explained above
 
-#### git, brah
+#### git
 * `.git`
 * `.gitattributes`
 * `.gitconfig`
@@ -43,7 +43,7 @@ export PATH
 ## Installation
 
 ```bash
-git clone https://github.com/lagrz/dotfiles-1.git && cd dotfiles && ./sync.sh
+git clone https://github.com/lagrz/dotfiles.git && cd dotfiles && ./sync.sh
 ```
 
 To update later on, just run the sync again.
