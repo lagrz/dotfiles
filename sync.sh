@@ -2,7 +2,15 @@
 #cd "$(dirname "$0")"
 
 function doIt() {
-	rsync --exclude "etc/" --exclude ".git/" --exclude ".DS_Store" --exclude "sync.sh" --exclude "readme.md" -av . ~
+	rsync \
+	--exclude "etc/" \
+	--exclude ".git/" \
+	--exclude ".DS_Store" \
+	--exclude "sync.sh" \
+	--exclude "readme.md" \
+	--exclude ".gitignore" \
+	--exclude ".gitmodules" \
+	--archive --verbose . ~
 }
 if [ "$1" == "--force" -o "$1" == "-f" ]; then
 	doIt
